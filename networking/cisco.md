@@ -53,4 +53,17 @@ show ip[v6] rip database
 show ip[v6] route rip
 debug ip rip { database | events }
 debug ipv6 rip [interface]
+
+! Disable debugging
+undebug all
+```
+
+## Span Ports
+### Local Span
+Mirroring both directions of GigabitEthernet1/0/1 to GigabitEthernet1/0/2
+```
+Device(config)# no monitor session 1
+Device(config)# monitor session 1 source interface gigabitethernet1/0/1
+Device(config)# monitor session 1 destination interface gigabitethernet1/0/2 encapsulation replicate
+Device(config)# end
 ```
