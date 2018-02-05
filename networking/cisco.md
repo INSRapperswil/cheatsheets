@@ -1,4 +1,24 @@
 # Cisco Commands
+
+## IP Address Configuration
+### Router
+#### IPv4
+```
+Router(config)# interface <interface>
+Router(config-if)# ip address <ip-address> <subnetmask>
+```
+#### IPv6
+```
+Router(config)# interface <interface>
+Router(config-if)# ipv6 address <ip-address>/<subnetmask>
+```
+##### Link Local
+```
+Router(config)# interface <interface>
+Router(config-if)# ipv6 address <link-local ip-address> link-local
+```
+
+
 ## Router
 ### show commands
 `show ip interface brief`
