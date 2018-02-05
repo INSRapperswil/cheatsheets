@@ -78,6 +78,21 @@ debug ipv6 rip [interface]
 undebug all
 ```
 
+### OSPF
+#### OSPFv2 Configuration
+
+#### OSPFv3 Configuration
+
+#### OSPF Troubleshooting
+```
+show ip [route | protocols]
+show ip ospf interface
+show ip ospf neighbor
+show ip ospf border-routers
+show ip ospf virtual-links
+debug ip ospf […]
+```
+
 ## Span Ports
 ### Local Span
 Mirroring both directions of GigabitEthernet1/0/1 to GigabitEthernet1/0/2
