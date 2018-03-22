@@ -183,8 +183,6 @@ no debug ip ospf
 undebug all
 ```
 
-## Debug Start / Stop
-
 ```bash
 show ip protocols
 show ip route
