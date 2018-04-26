@@ -1,14 +1,12 @@
- # Table of Contents
- * [Team Members](#team-members) 
+# Table of Contents
 
-# <a name="team-members"></a>Team Members
+ * [Glossary / Acronyms](#glossary) 
+    * [BGP](*#bgp)
+    * [MPLS](#mpls)
 
-* "J. Jesus. P. Aguinaga" <admin@listforks.com>
+# <a name="glossary"></a>Glossary / Acronyms
 
-
-# Glossary / Acronyms
-
-## Border Gateway Protocol BGP
+## <a name="bgp"></a>Border Gateway Protocol BGP
 
 
 **Adj-RIB**: Adjacent-Routing Information Base 
@@ -35,7 +33,7 @@
 
 
 
-## Multiprotocol Label Switching MPLS
+## <a name="mpls"></a> Multiprotocol Label Switching MPLS
 
 **CE**: Customer Edge router
 
