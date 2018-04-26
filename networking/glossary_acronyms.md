@@ -1,15 +1,17 @@
 Table
 ====
 
-* [Glossary](#Border Gateway Protocol BGP)
-* [Multiprotocol Label Switching MPLS](Multiprotocol Label Switching MPLS)
+* [Glossary](#Glossary / Acronyms)
+	 	[BGP](#Border Gateway Protocol BGP)
 
 
 
 
-# Glossary / Acronyms
+Glossary / Acronyms
+=================
 
-## Border Gateway Protocol BGP
+Border Gateway Protocol BGP
+-------------------------------
 
 **Adj-RIB**: Adjacent-Routing Information Base 
 
