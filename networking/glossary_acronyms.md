@@ -1,17 +1,7 @@
-Table
-====
+# Glossary / Acronyms
 
-* [Glossary](#Glossary / Acronyms)
-	 	[BGP](#Border Gateway Protocol BGP)
+## Border Gateway Protocol BGP
 
-
-
-
-Glossary / Acronyms
-=================
-
-Border Gateway Protocol BGP
--------------------------------
 
 **Adj-RIB**: Adjacent-Routing Information Base 
 
