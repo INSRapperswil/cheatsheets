@@ -1,4 +1,4 @@
-# <a name="command"></a>Cisco Command
+# <a name="command"></a>Cisco Commands
 
 ## <a name="basics"></a> Basics
 
