@@ -9,7 +9,23 @@
 ## <a name="verification"></a>Verification
 
 ```bash
-show ip cef
+!Data-plane FIB
+sw01-pod-1#show ip cef
+Prefix               Next Hop             Interface
+0.0.0.0/0            no route
+0.0.0.0/8            drop
+0.0.0.0/32           receive
+10.0.0.0/24          10.0.1.254           GigabitEthernet1/0/22
+10.0.1.0/24          attached             GigabitEthernet1/0/22
+10.0.1.0/32          receive              GigabitEthernet1/0/22
+10.0.1.1/32          receive              GigabitEthernet1/0/22
+10.0.1.254/32        attached             GigabitEthernet1/0/22
+10.0.1.255/32        receive              GigabitEthernet1/0/22
+10.0.2.0/24          10.0.1.254           GigabitEthernet1/0/22
+10.0.3.0/24          10.0.1.254           GigabitEthernet1/0/22
+10.0.4.0/24          10.0.1.254           GigabitEthernet1/0/22
+10.0.5.0/24          10.0.1.254           GigabitEthernet1/0/22
+10.0.6.0/24          10.0.1.254           GigabitEthernet1/0/22
 ```
 
 
@@ -37,6 +53,7 @@ sw01-pod-1#show mpls ldp neighbor
 ```
 
 ```bash
+! Control-plane LIB
 sw03-pod-1#show mpls ldp bindings
   lib entry: 10.0.0.0/24, rev 32
 	local binding:  label: 1318
@@ -56,6 +73,7 @@ sw03-pod-1#show mpls ldp bindings
 ```
 
 ```bash
+!Data-plane LFIB
 show mpls forwarding-table
 Local      Outgoing   Prefix           Bytes Label   Outgoing   Next Hop
 Label      Label      or Tunnel Id     Switched      interface
@@ -82,6 +100,29 @@ Label      Label      or Tunnel Id     Switched      interface
 
 
 ```bash
-show ip bgp vpnv6 unicast rd 10.255.255.0:0 detail
+sw01-pod-1#show ip bgp vpnv6 unicast rd 10.255.255.0:0 detail
+Route Distinguisher: 10.255.255.0:0
+BGP routing table entry for [10.255.255.0:0]2001:DB8::/64, version 12
+  Paths: (1 available, best #1, no table)
+  Not advertised to any peer
+  Refresh Epoch 2
+  Local
+    ::FFFF:10.255.255.0 (metric 3) (via default) from 10.10.10.10 (10.255.255.255)
+      Origin incomplete, metric 0, localpref 100, valid, internal, best
+      Extended Community: RT:0:0
+      Originator: 10.255.255.0, Cluster list: 10.255.255.255
+      mpls labels in/out nolabel/127
+      rx pathid: 0, tx pathid: 0x0
+BGP routing table entry for [10.255.255.0:0]2001:DB8:ABBA::/64, version 13
+  Paths: (1 available, best #1, no table)
+  Not advertised to any peer
+  Refresh Epoch 2
+  Local
+    ::FFFF:10.255.255.0 (metric 3) (via default) from 10.10.10.10 (10.255.255.255)
+      Origin incomplete, metric 0, localpref 100, valid, internal, best
+      Extended Community: RT:0:0
+      Originator: 10.255.255.0, Cluster list: 10.255.255.255
+      mpls labels in/out nolabel/128
+      rx pathid: 0, tx pathid: 0x0
 ```
 
