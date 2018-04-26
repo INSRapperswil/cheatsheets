@@ -45,37 +45,40 @@
 | **LER**|  label edge router, edge LSR|
 | **P**|   Provider router = Label Switching Router = core router (LSR)|
 | **PE**|  Provider Edge router = Edge Router (LSR)|
+| **RD** | Route Distinguisher |
+| **RT** | Route Target |
+| **VRF** | Virtual Routing and Forwarding table |
 
 ## <a name="not_classified"></a>Not classfied
 
 | Acronym | Description |
 | ------- | ----------- |
-| **ARPANET**|  Advanced Research Projects Agency Network | 
-| **ARP**|  Address Resolution Protocol| 
-| **ATM**|  Asynchronous Transfer Mode| 
-|  **DHCP**|  Dynamic Host Configuration Protocol| 
-| **IETF**|  Internet Engineering Task Force| 
-| **IP**|   Internet Protocol| 
-| **LLC**|   Logical link control| 
-| **MAC**|   Medium access control| 
-| **ISO**|   International Organization for Standardization| 
-| **LAN**|   Local Area Network| 
-| **OSI**|   Open Systems Interconnection model| 
-| **PDU** |   Protocol Data Unit| 
-| **PPP**  | Point-to-Point Protocol| 
-| **SDU** |  Service Data Unit | 
-| **SONET** |   Synchronous Optical Networking| 
-| **TCP**  | Transmission Control Protocol| 
-| **UDP** |  User Datagram Protocol| 
-| **VPN**  | virtual private network | 
-| **WAN**  | Wide Area Network| 
+| **ARPANET**|  Advanced Research Projects Agency Network |
+| **ARP**|  Address Resolution Protocol|
+| **ATM**|  Asynchronous Transfer Mode|
+|  **DHCP**|  Dynamic Host Configuration Protocol|
+| **IETF**|  Internet Engineering Task Force|
+| **IP**|   Internet Protocol|
+| **LLC**|   Logical link control|
+| **MAC**|   Medium access control|
+| **ISO**|   International Organization for Standardization|
+| **LAN**|   Local Area Network|
+| **OSI**|   Open Systems Interconnection model|
+| **PDU** |   Protocol Data Unit|
+| **PPP**  | Point-to-Point Protocol|
+| **SDU** |  Service Data Unit |
+| **SONET** |   Synchronous Optical Networking|
+| **TCP**  | Transmission Control Protocol|
+| **UDP** |  User Datagram Protocol|
+| **VPN**  | virtual private network |
+| **WAN**  | Wide Area Network|
 
 ## <a name="ospf"></a> Open Shortest Path First OSPF
 
 | Acronym | Description |
 | ------- | ----------- |
 |	| 	|
-	
+
 
 ## <a name="rip"></a> Rip
 
@@ -88,14 +91,14 @@
 
 | Acronym | Description |
 | ------- | ----------- |
-| **CIDR** |  Classless Inter-Domain Routing| 
+| **CIDR** |  Classless Inter-Domain Routing|
 
 ## <a name="storage"></a>Storage
 
 | Acronym | Description |
 | ------- | ----------- |
-| **DAS** |   Direct Attached Storage| 
-| **JBODs** |   Just A Bunch Of Disks| 
-| **SAN**|   Storage area network| 
+| **DAS** |   Direct Attached Storage|
+| **JBODs** |   Just A Bunch Of Disks|
+| **SAN**|   Storage area network|
 
 

@@ -9,6 +9,12 @@
 ## <a name="verification"></a>Verification
 
 ```bash
+show ip cef
+```
+
+
+
+```bash
 sw01-pod-1#show mpls ldp neighbor
     Peer LDP Ident: 10.255.1.3:0; Local LDP Ident 10.255.1.1:0
 	TCP connection: 10.255.1.3.54557 - 10.255.1.1.646
