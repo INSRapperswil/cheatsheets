@@ -3,6 +3,11 @@
  * [Glossary / Acronyms](#glossary) 
     * [BGP](*#bgp)
     * [MPLS](#mpls)
+    * [Not classified](#not_classified)
+    * [OSPF](#ospf)
+    * [RIP](#rip)
+    * [Routing](#routing)
+    * [Storage](#storage)
 
 # <a name="glossary"></a>Glossary / Acronyms
 
@@ -61,7 +66,7 @@
 
 **PE**: Provider Edge router = Edge Router (LSR)
 
-## Not classfied
+## <a name="not_classified"></a>Not classfied
 
 **ARPANET**: Advanced Research Projects Agency Network
 
@@ -101,27 +106,26 @@
 
 **WAN**: Wide Area Network
 
-## Open Shortest Path First OSPF
+## <a name="ospf"></a> Open Shortest Path First OSPF
 
 
 
 
 
-## Rip
+## <a name="rip"></a> Rip
 
 
 
-## Routing
+## <a name="routing"></a>Routing
 
 **CIDR**: Classless Inter-Domain Routing
 
-## Storage
+## <a name="storage"></a>Storage
 
 **DAS**: Direct Attached Storage
 
 **JBODs**: Just A Bunch Of Disks
 
 **SAN**: Storage area network
-
 
 
