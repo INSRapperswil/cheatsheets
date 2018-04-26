@@ -1,13 +1,3 @@
-# Table of Contents
-
-[Cisco Command](#command)
-
-* [Basics](#basics)
-* [EGP](#egp)
-* [Glossary / Acronyms](#glossary)
-* [IGP](#igp)
-* [MPLS](#mpls)
-
 # <a name="command"></a>Cisco Command
 
 ## <a name="basics"></a> Basics
