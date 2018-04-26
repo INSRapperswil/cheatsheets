@@ -1,5 +1,15 @@
+# Table of Contents
+
+[RIP](#rip)
+
+* [RIPv2 Configuration](#ripv2_configuration)
+* [RIPng Configuration](#ripng_configuration)
+* [RIP Troubleshooting](#rip_trouble)
+
 # RIP
-## RIPv2 Configuration
+
+## <a name="ripv2_configuration"></a>RIPv2 Configuration
+
 ```
 ! Enable RIPv2 IPv4 routing
 Router(config)# router rip
@@ -12,7 +22,8 @@ Router(config-router)# no auto-summary
 Router(config-router)# network <network>
 ```
 
-## RIPng Configuration
+## <a name="ripng_configuration"></a>RIPng Configuration
+
 ```
 ! Enable IPv6 routing
 Router(config)# ipv6 unicast-routing
@@ -29,7 +40,8 @@ Router(config)# interface <interface>
 Router(config-if)# ipv6 rip <rip-instance-name> enable
 ```
 
-## RIP Troubleshooting
+## <a name="rip_trouble"></a>RIP Troubleshooting
+
 ```
 show ip[v6] protocols
 show ip[v6] rip database

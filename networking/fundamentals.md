@@ -1,6 +1,6 @@
 # Table of Contents
 
-* [Fundamental Cisco Commands](#fundamental)
+[Fundamental Cisco Commands](#fundamental)
   * [Debug / Messages](#debug)
   * [Port Mirroring](#port_mirroring)
   * [CLI](#cli)

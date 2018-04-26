@@ -1,13 +1,13 @@
 # Table of Contents
 
- * [Glossary / Acronyms](#glossary) 
-    * [BGP](*#bgp)
-    * [MPLS](#mpls)
-    * [Not classified](#not_classified)
-    * [OSPF](#ospf)
-    * [RIP](#rip)
-    * [Routing](#routing)
-    * [Storage](#storage)
+[Glossary / Acronyms](#glossary) 
+* [BGP](*#bgp)
+* [MPLS](#mpls)
+* [Not classified](#not_classified)
+* [OSPF](#ospf)
+* [RIP](#rip)
+* [Routing](#routing)
+* [Storage](#storage)
 
 # <a name="glossary"></a>Glossary / Acronyms
 

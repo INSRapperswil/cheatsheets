@@ -1,6 +1,12 @@
-# MPLS
+# Table of Contents
 
-## Verification
+[MPLS](#MPLS)
+
+* [Verification](#verification)
+
+# <a name="mpls"></a>MPLS
+
+## <a name="verification"></a>Verification
 
 ```bash
 sw01-pod-1#show mpls ldp neighbor
@@ -66,6 +72,8 @@ Label      Label      or Tunnel Id     Switched      interface
 1308       1107       10.255.255.0/32  3186          Gi1/0/24   10.1.13.1
 1309       1108       10.10.10.0/24    0             Gi1/0/24   10.1.13.1
 ```
+
+
 
 ```bash
 show ip bgp vpnv6 unicast rd 10.255.255.0:0 detail

@@ -1,5 +1,14 @@
-# Layer 2 Configuration
-## Ports
+# Table of Contents
+
+[Layer 2 Configuration](#layer2_config)
+
+* [Ports](#ports)
+* [Verification](#verification)
+
+# <a name="layer2_config"></a>Layer 2 Configuration
+
+## <a name="ports"></a>Ports
+
 ### Access Port
 ```
 interface <interface>
@@ -14,7 +23,7 @@ interface <interface>
 ```
 
 
-## Verification
+## <a name="verification"></a>Verification
 `show interfaces status`
 - displays an overview of all interfaces
 

@@ -1,6 +1,6 @@
 # Table of Contents
 
-[Cisco Commands](#command)
+[Cisco Command](#command)
 
 * [Basics](#basics)
 * [EGP](#egp)

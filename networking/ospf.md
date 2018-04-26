@@ -1,5 +1,16 @@
-# OSPF
-## OSPFv2 Configuration
+# Table of Contents
+
+[OSPF](#ospf)
+
+* [OSPFv2 Confguration](#ospfv2_configuration)
+* [OSPFv3 Configuration](ospfv3_configuration)
+* [Verification](#verification)
+* [OSPF Debugging](#ospf_debug)
+
+# <a name="ospf"></a>OSPF
+
+## <a name="ospfv2_configuration"></a>OSPFv2 Configuration
+
 ### Single Area
 
 ```
@@ -16,9 +27,10 @@ router ospf 1
   network 192.168.0.0 0.0.0.3 area 1
 ```
 
-## OSPFv3 Configuration
+## <a name="ospfv3_configuration"></a>OSPFv3 Configuration
 
-## Verification
+## <a name="verification"></a>Verification
+
 ```
 show ip [route | protocols]
 show ip ospf interface
@@ -26,7 +38,8 @@ show ip ospf neighbor
 show ip ospf border-routers
 show ip ospf virtual-links
 ```
-## OSPF Debugging
+## <a name="ospf_debug"></a>OSPF Debugging
+
 ```
 debug ip ospf ?
 ```

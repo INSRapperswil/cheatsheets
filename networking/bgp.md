@@ -1,11 +1,23 @@
-# BGP
-## BGP IPv4
+# Table of Contents
+
+[BGP](#ggp)
+
+* [BGP IPv4](#bpg_ipv4)
+* [BGP IPv6](#bgp_ipv6)
+* [BGP Disable IPv4 Unicast Default](#bgp_disable)
+* [Verification](#verification)
+
+# <a name="bgp"></a>BGP
+
+##<a name="bgp_ipv4"></a> BGP IPv4
+
 ```
 router bgp <local AS>
   neighbor <IP Address> remote-as <remote AS>
 ```
 
-## BGP IPv6
+## <a name="bgp_ipv6"></a>BGP IPv6
+
 ```
 router bgp <local AS>
   neighbor <IP Address> remote-as <remote AS>
@@ -17,14 +29,16 @@ router bgp <local AS>
   exit-address-family
 ```
 
-## BGP Disable IPv4 Unicast Default
+## <a name="bgp_disable"></a>BGP Disable IPv4 Unicast Default
+
 Disable activate ipv4-unicast for a peer by default
 ```
 router bgp <local AS>
   no bgp default ipv4-unicast
 ```
 
-## Verification
+## <a name="verification"></a>Verification
+
 `show ip bgp summary`
 - Summary of BGP IPv4 neighbor status
 
