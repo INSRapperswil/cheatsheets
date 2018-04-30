@@ -4,6 +4,7 @@
 * [BGP](*#bgp)
 * [MPLS](#mpls)
 * [Not classified](#not_classified)
+* [Overlay Networkds](#overlay)
 * [OSPF](#ospf)
 * [RIP](#rip)
 * [Routing](#routing)
@@ -79,13 +80,30 @@
 | ------- | ----------- |
 |	| 	|
 
+## <a name="overlay"></a> Overlay Networks
+| Acronym | Description |
+| ------- | ----------- |
+|**CN**	| Correspondent Node 	|
+|**COA**	| Care of Address	|
+|**FA**	|Foreigen Agent 	|
+|**GRE**	| Generic Routing Encapsulation 	|
+|**HA**	|Home Agent 	|
+|**LISP**	| 	|
+|**MN**	|Mobile Node 	|
+|	| 	|
+|**OTV**	| Overlay Interface Address	|
+|	| 	|
+|**ROLOC**	| Routing Locator	|
+|**VM**	| Virtual Machine 	|
+|**VPLS**	| 	|
+|**VXLAN**	| 	|
 
-## <a name="rip"></a> Rip
+
+## <a name="rip"></a> Routing Information Protocol Rip
 
 | Acronym | Description |
 | ------- | ----------- |
 |	| 	|
-
 
 ## <a name="routing"></a>Routing
 
