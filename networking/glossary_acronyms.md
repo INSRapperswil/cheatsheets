@@ -85,14 +85,12 @@
 | ------- | ----------- |
 |**CN**	| Correspondent Node 	|
 |**COA**	| Care of Address	|
-|**FA**	|Foreigen Agent 	|
+|**FA**	|Foreign Agent 	|
 |**GRE**	| Generic Routing Encapsulation 	|
 |**HA**	|Home Agent 	|
-|**LISP**	| 	|
+|**LISP**	| Locator/ID Separation Protocol |
 |**MN**	|Mobile Node 	|
-|	| 	|
 |**OTV**	| Overlay Interface Address	|
-|	| 	|
 |**ROLOC**	| Routing Locator	|
 |**VM**	| Virtual Machine 	|
 |**VPLS**	| 	|
