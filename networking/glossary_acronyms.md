@@ -8,6 +8,7 @@
 * [OSPF](#ospf)
 * [RIP](#rip)
 * [Routing](#routing)
+* [SIP](#sip)
 * [Storage](#storage)
 * [WAN Technologies](#wan)
 
@@ -108,6 +109,16 @@
 | Acronym | Description |
 | ------- | ----------- |
 | **CIDR** |  Classless Inter-Domain Routing|
+
+## <a name="sp"></a> Session Initiation Protocol SIP
+| Acronym | Description |
+| ------- | ----------- |
+|**SDP**	| Session Description Protocol 	|
+| **SRTP ** |Secure Real-time Transport Protocol | 
+|**UA** | User Agent | 
+| **UAC**| User Agent Client|
+| **UAS**| User Agent Server|
+
 
 ## <a name="storage"></a>Storage
 
