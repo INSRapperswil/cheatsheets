@@ -114,8 +114,8 @@
 | Acronym | Description |
 | ------- | ----------- |
 |**SDP**	| Session Description Protocol 	|
-| **SRTP ** |Secure Real-time Transport Protocol | 
-|**UA** | User Agent | 
+| **SRTP** |Secure Real-time Transport Protocol |
+|**UA** | User Agent |
 | **UAC**| User Agent Client|
 | **UAS**| User Agent Server|
 
