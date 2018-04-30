@@ -93,11 +93,11 @@
 |**OTV**	| Overlay Interface Address	|
 |**ROLOC**	| Routing Locator	|
 |**VM**	| Virtual Machine 	|
-|**VPLS**	| 	|
-|**VXLAN**	| 	|
+|**VPLS**	| Virtual Private LAN Service	|
+|**VXLAN**	| Virtual Extensible LAN	|
 
 
-## <a name="rip"></a> Routing Information Protocol Rip
+## <a name="rip"></a> Routing Information Protocol RIP
 
 | Acronym | Description |
 | ------- | ----------- |
