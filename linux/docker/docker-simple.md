@@ -47,3 +47,8 @@ docker rm $(docker ps -aq)
 ```bash
 docker rmi $(docker images -q)
 ```
+
+## Create new network
+```bash
+docker network create -d <network type> <network name>
+```
