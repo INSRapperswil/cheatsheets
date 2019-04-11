@@ -1,10 +1,38 @@
 # Table of Contents
 
-[MPLS](#MPLS)
-
+* [Configuration](#configuration)
+  * [Fundamental](#fundamental)
+  * [VRF](#vrf)
 * [Verification](#verification)
 
 # <a name="mpls"></a>MPLS
+
+## <a name="configuration"></a>Configuration
+### <a name="fundamental"></a>Fundamental
+**Change MPLS Label Range**
+```bash
+mpls label range <startvalue> <endvalue>
+```
+**Activate MPLS on Interface**
+```bash
+interface <interface>
+mpls ip
+```
+**Override PHP**
+```bash
+mpls ldp explicit-null
+```
+
+### <a name="vrf"></a>VRF
+**VRF Definition**
+```bash
+vrf definition <vrf name>
+  rd <ip address>:<AS>
+  route-target export <rt>
+  route-target import <rt>
+  address-family <version (ipv4, ipv6)>
+  exit-address-family
+```
 
 ## <a name="verification"></a>Verification
 
@@ -125,4 +153,3 @@ BGP routing table entry for [10.255.255.0:0]2001:DB8:ABBA::/64, version 13
       mpls labels in/out nolabel/128
       rx pathid: 0, tx pathid: 0x0
 ```
-

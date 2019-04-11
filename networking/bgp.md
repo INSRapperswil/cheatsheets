@@ -9,14 +9,15 @@
 
 # <a name="bgp"></a>BGP
 
-##<a name="bgp_ipv4"></a> BGP IPv4
-
+## <a name="bgp_ipv4"></a> BGP IPv4
+**Important:** IPv4 Routing must be active `ip routing`
 ```
 router bgp <local AS>
   neighbor <IP Address> remote-as <remote AS>
 ```
 
 ## <a name="bgp_ipv6"></a>BGP IPv6
+**Important:** IPv6 Routing must be active `ipv6 unicast-routing`
 
 ```
 router bgp <local AS>
