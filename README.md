@@ -1,5 +1,5 @@
 # Cheat Sheets
-![INS Logo](https://netacad.ch/static/media/NetAcad_INS_RGB_path.c6232b15.svg)  
+![INS Logo](https://netacad.ch/static/media/INS_wide_RGB_path.4f1512f5.svg)  
 ## Networking
 
 - [Cisco Commands](networking/cisco.md)
