@@ -1,5 +1,5 @@
 # <a name="command"></a>Cisco Commands
-![INS Logo](http://www.netacad.ch/typo3conf/ext/mylearning_template/i/na_ins_logo.png)  
+![INS Logo](https://netacad.ch/static/media/NetAcad_INS_RGB_path.c6232b15.svg)  
 
 **Cisco Commands for CN1 and CN2**
 ## <a name="basics"></a> Basics
