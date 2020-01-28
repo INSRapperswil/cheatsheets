@@ -1,7 +1,7 @@
 # <a name="command"></a>Cisco Commands
 ![INS Logo](https://netacad.ch/static/media/NetAcad_INS_RGB_path.c6232b15.svg)  
 
-**Cisco Commands for CN1 and CN2**
+**Cisco Commands for CCNA and also HSR modules CN1/CN2**
 ## <a name="basics"></a> Basics
 
 - [Fundamentals](fundamentals.md)
