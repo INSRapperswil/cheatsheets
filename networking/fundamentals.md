@@ -8,12 +8,20 @@
   * [Verification](#verification)
 
 # Fundamental Cisco Commands
-
 ## Debug / Messages
-
 ### Loggin Messages In SSH Session
 ```
 Router# terminal monitor
+```
+
+### General Configuration
+To improve the experience with the CLI:
+```
+no ip domain-lookup
+line console 0
+  logging synchronous
+  exec-timeout 0 0
+  exit
 ```
 
 ### Start A Debug
