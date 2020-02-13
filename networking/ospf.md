@@ -2,57 +2,121 @@
 
 [OSPF](#ospf)
 
-* [OSPFv2 Confguration](#ospfv2_configuration)
-* [OSPFv3 Configuration](ospfv3_configuration)
-* [OSPF Point to Point](#p2p)
+* [OSPFv2 Configuration](#ospfv2-configuration)
+* [OSPFv3 Configuration](#ospfv3-configuration)
+* [Point to Point OSPF](#point-to-point-ospf)
+* [Wildcard](#wildcard)
 * [Verification](#verification)
-* [OSPF Debugging](#ospf_debug)
+* [OSPF Debugging](#ospf-debugging)
+* [Remove OSPF Configuration](#remove-ospf-configuration)
 
-# <a name="ospf"></a>OSPF
+# OSPF
 
-## <a name="ospfv2_configuration"></a>OSPFv2 Configuration
+## OSPFv2 Configuration
+### Router ID
+**Note:** _The Router ID is a 32 bit number in dotted-decimal notation like an IP address. It is freely assignable but best practise is to use the device-name number._
+```
+Router(config)# router-id <device-name-number>
+```
+
 
 ### Single Area
-
+**Note:** The area-id in a single-area is usually set to `0`.
 ```
-router ospf 1
-  auto-cost reference-bandwidth 1000
-  network 192.168.0.0 0.0.0.3 area 0
-  network 192.168.0.12 0.0.0.3 area 0
+Router(config)# router ospf <process-id>
+Router(config-router)#   auto-cost reference-bandwidth 1000
+Router(config-router)#   network <network-address> <wildcard-mask> area <area-id>
 ```
 
 ### Multi-Area
-
+**Note:** The area-id `0` in multi-area is always reserved for the backbone area.
 ```
-router ospf 1
-  network 192.168.0.0 0.0.0.3 area 1
+router ospf <process-id>
+  network <network-address> <wildcard-mask> area <area-id>
 ```
 
-### <a name="interface2ospf"></a>Add Interface to OSPF
+### Change Area into Stub Area
 ```
-ip ospf <process-id> area <area-id>
+Router(config)# router ospf <process-id>
+Router(config-router)# area <area-id> stub
 ```
-**Hint:** When the network is already declared with `router ospf ...` then there is no need to add the interface directly
 
-## <a name="ospfv3_configuration"></a>OSPFv3 Configuration
+### Change Area into Totally Stub Area
+```
+Router(config)# router ospf <process-id>
+Router(config-router)# area <area-id> stub no-summary
+```
 
-## <a name="verification"></a>Verification
 
+### Add Interface to OSPF
+**Hint:** _When the network is already declared with `router ospf ...` then there is no need to add the interface directly_
+```
+Router(config-if)# ip ospf <process-id> area <area-id>
+```
+
+### Configure a Passive Interface
+```
+Router(config)# router ospf <ospf-process-id>
+Router(config-router)# passive-interface <interface-number>
+```
+
+### Set Link Speed on Serial Interface
+For example to 32 kbit/s:
+```
+Router(config-if)# clock rate 32000
+Router(config-if)# bandwidth 32
+```
+To set it back:
+```
+Router(config-if)# speed auto
+```
+
+### Redistribute connected Subnets
+```
+Router(config)# router ospf <process-id>
+Router(config-router)# redistribute connected subnets
+```
+
+### Virtual Link
+```
+Router(config)# router ospf <process-id>
+Router(config-if)# area <area-id> virtual-link <neighbour-router-id>
+```
+
+## OSPFv3 Configuration
+
+## Wildcard
+The wildcard masks are in use to define a range of network addresses, therefore they consist also of 32 bits. To get the mask you have to substract the desired subnt mask from 255.255.255.255:
+```
+  255.255.255.255
+- 255.255.254.0        (desired subnet mask /23)
+  ---------------
+    0.  0.  1.255      (Wildcard mask)
+```
+
+## Verification
 ```
 show ip [route | protocols]
 show ip ospf interface
+show ip ospf interface brief
 show ip ospf neighbor
 show ip ospf border-routers
 show ip ospf virtual-links
 ```
 
-## <a name="p2p"></a>Point to Point OSPF
+## Point to Point OSPF
 ```
 ip ospf network point-to-point
 ```
 
-## <a name="ospf_debug"></a>OSPF Debugging
-
+## OSPF Debugging
 ```
 debug ip ospf ?
+debug ip ospf packet    -> OSPF protocol changes
+debug ip ospf adj       -> neighbor adjacency changes
+```
+
+## Remove OSPF Configuration
+```
+Router(config)# no router ospf <process-id>
 ```
