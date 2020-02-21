@@ -18,7 +18,7 @@ Router(config-router)# net <net-id>
 Router(config-router)# is-type level-1          <-! for a Level2-Router: level-1-2
 Router(config-router)# log-adjacency-changes
 
-Router(config)# interface <interface>
+Router(config)# interface <interface-number>
 Router(config-if)# ip address <ip-address> <subnet-mask>
 Router(config-if)# ip router isis
 Router(config-if)# no shutdown
@@ -31,7 +31,7 @@ Switch(config)# router isis
 Switch(config-switch)# net <net-id>
 Switch(config-switch)# log-adjacency-changes
 
-Switch(config)# interface <interface>
+Switch(config)# interface <interface-number>
 Switch(config-if)# no switchport
 Switch(config-if)# ip address <ip-address> <subnet-mask>
 Switch(config-if)# ip router isis
