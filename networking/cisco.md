@@ -7,6 +7,7 @@
 - [Fundamentals](fundamentals.md)
 - [IP](ip.md)
 - [Switching](switching.md)
+- [Multicast](multicast.md)
 
 ## <a name="egp"></a> EGP
 
