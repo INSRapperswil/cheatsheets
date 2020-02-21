@@ -50,6 +50,7 @@ Switch# show ip igmp snooping querier
 Switch# debug ip igmp <multicast-group-address>
 ```
 
+
 ## PIM Dense Mode
 Activating PIM Dense Mode on the interface:
 ```

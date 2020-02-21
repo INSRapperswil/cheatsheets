@@ -5,10 +5,10 @@
   * [VRF](#vrf)
 * [Verification](#verification)
 
-# <a name="mpls"></a>MPLS
+# MPLS
 
-## <a name="configuration"></a>Configuration
-### <a name="fundamental"></a>Fundamental
+## Configuration
+### Fundamental
 **Change MPLS Label Range**
 ```bash
 mpls label range <startvalue> <endvalue>
@@ -23,7 +23,7 @@ mpls ip
 mpls ldp explicit-null
 ```
 
-### <a name="vrf"></a>VRF
+### VRF
 **VRF Definition**
 ```bash
 vrf definition <vrf name>
@@ -34,7 +34,7 @@ vrf definition <vrf name>
   exit-address-family
 ```
 
-## <a name="verification"></a>Verification
+## Verification
 
 ```bash
 !Data-plane FIB
