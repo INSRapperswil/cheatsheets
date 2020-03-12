@@ -64,6 +64,8 @@
 | **DTE** | Data Terminal Equipment |
 | **ES** | End system|
 | **IIH** | Intermediate system to Intermediate system Hello |
+| **ISH** | Intermediate system Hello |
+| **ESH** | End system Hello |
 | **IS** | Intermediate system (OSI) |
 | **L1** | Level 1 |
 | **L2** | Level 2 |
