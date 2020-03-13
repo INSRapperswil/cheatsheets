@@ -9,6 +9,21 @@
 
 
 # IS IS
+## Verification
+```
+Switch-or-Router# show isis database level-1 verbose
+Switch-or-Router# show isis database level-2 verbose
+```
+
+```
+Switch-or-Router# show isis neighbors
+
+System Id      Type Interface   IP Address      State Holdtime Circuit Id
+R1             L1   Fa0/0       10.0.13.1       UP    8        R1.02
+R2             L1L2 Se0/0/0     10.0.23.2       UP    21       00
+SW2            L2   Fa0/1       10.0.203.20     UP    8        SW2.01
+```
+
 ## Configuration
 **Note:** _Use for the NET-ID (Network Entity Title) a combination of AFI (Authority and Format Identifier) and the Device ID._
 ### Routers
@@ -63,9 +78,3 @@ Switch-or-Router(config-route-map)# match ip address <leak-acl-name>
 Switch-or-Router(config)# router isis
 Switch-or-Router(config-router)# redistribute isis ip level-2 into level-1 route-map <leak-route-map-name>
 ````
-
-## Verification
-```
-Switch-or-Router(config)# show isis database level-1 verbose
-Switch-or-Router(config)# show isis database level-2 verbose
-```
