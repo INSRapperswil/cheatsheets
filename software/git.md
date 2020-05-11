@@ -74,12 +74,39 @@ git checkout -
 # Check if the remote has anything new for me
 git fetch
 
-# Push Changes to Remote
+# Push changes to Remote
 git push
 
-# Get Changes from Remote
+# Get changes from Remote
 git pull
 
 # View available origins
 git origin -v
+```
+
+## Debugging
+
+### View Complete Log
+
+```bash
+git log
+```
+
+### Use Git Bisect
+
+```bash
+# Start a bisect session
+git bisect start
+
+# Tell git that this commit is bad
+git bisect bad
+
+# Tell git that this commit is good
+git bisect good
+
+# Tell git about a particular good commit
+git bisect good 005b4e6aa757a5c8c08aa694c01e630631b6aaba
+
+# Reset after bisect session
+git bisect reset
 ```
